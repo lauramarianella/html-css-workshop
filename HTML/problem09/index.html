@@ -3,5 +3,55 @@
   <body>
     <h1>Registration form</h1>
     <!-- Add form here -->
+    <br>
+    <form method="get">
+      <div>
+      Username <label><input type="text"/></label>
+      password <label><input type="password"/></label>
+    </div>
+
+    <br>
+
+    <div>Email <label><input type="email" pattern=".+@gmail.com"/></label></div>
+
+    <br>
+
+    <div>
+      <div>Which taxi do you require?</div>
+      <label><input type="radio" name="taxi" value="car"> Car<br></label>
+      <label><input type="radio" name="taxi" value="van"> Van<br></label><!--checked-->
+      <label><input type="radio" name="taxi" value="tukTuk"> Tuk Tuk<br></label>
+    </div>
+
+    <br>
+    <div>Extras</div>
+    <div>
+    <label><input type="checkbox" required  name="extra1" value="1"> Baby Seat<br><!--checked--></label>
+    <label><input type="checkbox" required  name="extra2" value="2"> Wheelchair Access<br></label>
+    <label><input type="checkbox" required  name="extra3" value="3"> Stock Tip<br> 
+    </label>
+    </div>
+
+    <br>
+    <div>
+      Pickup
+      <label>
+      <select>
+          <option value="1">Select One</option>
+          <option value="2">Taxi Office</option>
+          <option value="3">Town Hall</option>
+          <option value="4">We'll Guess</option>
+      </select>
+      </label>
+    </div>
+
+    <br>
+    <div>
+      Special
+      <label><textarea name="comment" form="usrform"></textarea></label>
+    </div>
+    <label><input type="button" value="Submit"></label>
+    </form>
+
   </body>
 </html>
